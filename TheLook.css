@@ -1,0 +1,74 @@
+body{
+    border: 5px solid;
+    border-color:rgb(0, 52, 52);
+    box-shadow: 5px 5px 2px rgb(247, 156, 156);
+    width:500px;
+    height:500px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    padding:5px;
+    margin:auto;
+    margin-top: 50px;
+
+}
+h1{
+    text-align: center;
+    color:brown;
+}
+.currentState{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    color:brown;
+    margin-bottom: 5px;
+    
+}
+.Board{
+    margin:20px;
+    margin-left:90px;
+    display: grid;
+    grid-template-columns: repeat(3, 0fr);
+    gap: 5px;
+    margin-bottom: 1.5rem;
+    position: relative;
+}
+.BoardCells{
+    cursor: pointer;
+    font-size:75px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border: 1px solid;
+    border-color: burlywood;
+    border-radius: 3px;
+    box-shadow: 1px 1px 4px red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100px;
+    height:100px;
+    transition: background-color 0.3s;
+}
+.BoardCells.x{
+    color:crimson;
+}
+.BoardCells.o{
+    color:cornflowerblue;
+}
+.BoardCells:hover{
+    background-color: rgb(255, 210, 210);
+}
+.Restart{
+    margin-left:220px;
+    color:aliceblue;
+    width:60px;
+    height:35px;
+    border: 5px beige;
+    background-color:rgb(0, 165, 110);
+    font-style: italic;
+    box-shadow: 3px 3px 4px rgba(112, 112, 89, 0.808);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: small;
+    transition: background-color 0.3s;
+}
+.Restart:hover{
+    background-color: rgb(143, 254, 156);
+}
